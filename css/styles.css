@@ -1,0 +1,148 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+body, html {
+    background-color: #161623;
+    text-align: center;
+}
+
+header {
+    background-color: #161623;
+    position: fixed;
+
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
+
+    align-items: center;
+    text-align: center;
+    padding: 1.5em;
+}
+
+
+#imc-header {
+    font-size: 30px;
+    color: #fff;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 6rem;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+    align-items: center;
+}
+
+.nav-bar > a {
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.nav-bar a::after {
+    content: "";
+    position: absolute;
+    background-color: #494952;
+
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s all;
+}
+
+.nav-bar a:hover {
+    color: #fff;
+}
+
+.nav-bar a:hover::after {
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.imc-titulo {
+
+    padding-top: 160px;
+    margin-bottom: -30px;
+    margin-left: 70px;
+    font-size: 45px;
+    color: #fff;
+}
+
+img.imagem-sobre-imc {
+    margin: 60px 60px 0 60px;
+    width: 800px;
+    border-radius: 22%;
+}
+
+h2.imc-subtitulo-como-calcular {
+
+    margin-bottom: -30px;
+    margin-left: 70px;
+    font-size: 40px;
+    color: #fff;
+}
+
+img.imagem-como-calcular {
+    margin: 60px 60px 0 60px;
+    width: 800px;
+    border-radius: 22%;
+}
+
+p {
+    margin: 90px;
+    padding-bottom: 100px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+/* pagina alimetação saudável */
+h1.alimentacao-saudavel-titulo {
+
+    padding-top: 160px;
+    margin-bottom: -30px;
+    margin-left: 70px;
+    font-size: 45px;
+    color: #fff;
+}
+
+p#paragrafo-alimentacao {
+    margin-top: 130px;
+    padding: 50px;
+}
+
+img#imagem-frutas {
+    float: left;
+    margin-left: 70px;
+    padding-right: 130px;
+    width: 700px;
+    border-radius: 50px;
+}
+
+img#imagem-alimentacao {
+
+    float: left;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding-right: 130px;
+    width: 700px;
+    border-radius: 50px;
+}
